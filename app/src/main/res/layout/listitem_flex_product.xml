@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeHolder"
+    android:layout_width="@dimen/listitem_flex_product_layout_dimen"
+    android:layout_height="@dimen/listitem_flex_product_layout_dimen"
+    android:layout_marginEnd="3dp"
+    android:layout_marginStart="3dp"
+    android:background="?android:attr/selectableItemBackgroundBorderless">
+
+
+    <TextView
+        android:id="@+id/tv_listitem_flex_product_name"
+        android:layout_width="@dimen/listitem_flex_product_layout_dimen"
+        android:layout_height="@dimen/listitem_flex_product_layout_dimen"
+        android:drawableTop="@mipmap/ic_launcher_round"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:maxWidth="70dp"
+        android:text="DefaultProductName" />
+
+
+    <TextView
+        android:id="@+id/tv_listitem_flex_product_name_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:text="B"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/iv_listitem_flex_product_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_local_grocery_store_accent_24dp"/>
+
+        <TextView
+            android:id="@+id/tv_listitem_flex_product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="10000.00"
+            android:ellipsize="marquee"
+            android:layout_centerInParent="true"
+            android:textSize="12sp"
+            android:paddingBottom="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

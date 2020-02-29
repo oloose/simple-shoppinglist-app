@@ -1,0 +1,75 @@
+<resources>
+    <!--Misc-->
+    <string name="app_name">ToBuy</string>
+    <string name="com_android_hoags_shoppinglist_recentshoppinglistfragment">com.android.hoags.shoppinglist.RecentShoppingListFragment</string>
+
+    <!--Activity Titles-->
+    <string name="title_activity_product_overview">Produktübersicht</string>
+    <string name="title_dialog_name_shoppinglist">Titel der Einkaufsliste:</string>
+    <string name="title_activity_shopping_list">ShoppingListActivity</string>
+    <string name="title_default_shoppinglist">Neue Einkaufsliste</string>
+
+    <!--Fragement Titles-->
+    <string-array name="fragment_titles">
+        <item>Letzten</item>
+        <item>Gemerkt</item>
+    </string-array>
+
+    <!--Button Texts-->
+    <string name="btn_cancel">Abbrechen</string>
+    <string name="btn_add">Hinzufügen</string>
+    <string name="btn_save">Speichern</string>
+    <string name="btn_dialog_button_edit_confirm">Übernehmen</string>
+
+    <!--Error Messages-->
+    <string name="error_empty_product_name">Ein Produktname wird benötigt</string>
+
+
+    <!--Content descriptions-->
+    <string name="content_description_favorite_button">Favorite Star</string>
+
+    <!--Label TextViews-->
+    <string name="label_description">Bemerkung:</string>
+    <string name="label_price">Gesamtpreis:</string>
+    <string name="label_seller">Verkäufer:</string>
+    <string name="label_name">Name:</string>
+    <string name="label_headline_product_dialog">Produktübersicht:\u00A0</string>
+    <string name="label_shopping_list_price">Einkaufsliste:</string>
+    <string name="label_cart_price">Warenkorb:</string>
+
+    <!--Menus-->
+    <string name="menu_delete_shopping_list">Einkaufsliste löschen</string>
+    <string name="menu_title_products">Produktübersicht</string>
+    <string name="menu_add_product_shopping_list">Neues Produkt hinzufügen</string>
+    <string name="menu_save_shopping_list">Einkaufsliste speichern</string>
+    <string name="menu_clear_shopping_cart">Wagen leeren</string>
+
+    <!--Snackbar Messages-->
+    <string name="snackbar_message_item_deleted">wurde gelöscht!</string>
+    <string name="snackbar_message_item_favored">wurde als Favorit gespeichert!</string>
+    <string name="snackbar_message_item_unfavored">wurde aus den Favoriten entfernt!</string>
+    <string name="snackbar_message_edit_confirm">\u00A0übernommen</string>
+    <string name="snackbar_message_changes_for">Änderung für\u00A0</string>
+    <string name="snackbar_message_deleted">\u00A0gelöscht!</string>
+    <string name="snackbar_message_deleted_shopping_list">Einkaufsliste gelöscht!</string>
+    <string name="snackbar_message_error_shopping_list_name_required">Ein Name wird benötigt</string>
+    <string name="snackbar_message_added_product">\u00A0der Produktliste hinzugefügt!</string>
+    <string name="snackbar_message_saved_shopping_list">Einkaufsliste gespeichert!</string>
+    <string name="snackbar_message_added_product_to_shoppingList">\u00A0der Einkaufsliste hinzugefügt!</string>
+    <string name="snackbar_message_removed_item_from_shopping_list">\u00A0von der Einkaufsliste entfernt!</string>
+    <string name="snackbar_message_action_canceled">Abgebrochen!</string>
+    <string name="snackbar_message_product_purchase">\u00A0in Wagen gelegt</string>
+    <string name="snackbar_message_product_purchase_reverse">\u00A0aus Wagen genommen</string>
+
+    <!--Popup Menus-->
+    <string name="menu_popup_show_shoppinglist">Anzeigen</string>
+    <string name="menu_popup_delete_shoppinglist">Löschen</string>
+    <string name="menu_popup_edit_product">Bearbeiten</string>
+    <string name="menu_popup_delete_flex_product">Von Einkaufsliste entfernen</string>
+    <string name="menu_popup_shopping_cart_add_flex_product">In Wagen legen</string>
+    <string name="menu_popup_shopping_cart_remove_flex_product">Aus Wagen rausnehmen</string>
+
+    <!--Dialog-->
+    <string name="dialog_headline_remove_product">\u00A0wirklich löschen?</string>
+    <string name="dialog_button_delete_product">Löschen</string>
+</resources>

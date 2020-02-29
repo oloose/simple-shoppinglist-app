@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_popup_show_shoppingList"
+        android:title="@string/menu_popup_show_shoppinglist"/>
+
+    <item
+        android:id="@+id/menu_popup_delete_shoppinglist"
+        android:title="@string/menu_popup_delete_shoppinglist"/>
+</menu>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.hoags.shoppinglist.fragments.ShoppingListFragment"
+    tools:listitem="@layout/listitem_shoppinglist"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginTop="@dimen/padding_top_list"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/layout_holder_rc_product_list">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_add_first_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_add_product_shopping_list"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view_product_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+                tools:listitem="@layout/listitem_product"
+                android:padding="2dp"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_dropzone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/layout_holder_rc_product_list"
+        android:layout_marginTop="@dimen/padding_top_list"
+        android:layout_marginBottom="4dp"
+        android:layout_above="@+id/layout_holder_prices">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/dropzone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:padding="2dp"
+            app:layoutManager="android.support.v7.widget.GridLayoutManager"
+            app:spanCount="5"
+            tools:listitem="@layout/listitem_flex_product" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layout_holder_prices"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_holder_label_cart_price"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tv_label_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_cart_price"
+                android:textSize="22sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_cart_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9.10"
+                android:textSize="22sp"
+                android:textAlignment="textEnd"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/tv_label_cart_price" />
+
+            <View
+                android:id="@+id/divider_prices"
+                android:layout_below="@+id/tv_cart_price"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_label_shopping_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_shopping_list_price"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:id="@+id/tv_shopping_list_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="91.10"
+                android:textSize="22sp"
+                android:textAlignment="textEnd"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/tv_label_shopping_list_price" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
